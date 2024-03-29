@@ -1,0 +1,117 @@
+#container {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(47, 88%, 63%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Figtree", sans-serif;
+}
+
+.card {
+  width: 384px;
+  height: 522px;
+  background-color: hsl(0, 0%, 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  box-shadow: 8px 8px hsl(0, 0%, 0%);
+}
+
+.content {
+  width: 336px;
+  height: 474px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.design_pic {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.text {
+  height: 194px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  width: 82px;
+  height: 29px;
+  background-color: hsl(47, 88%, 63%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+h1,
+p {
+  color: hsl(0, 0%, 7%);
+  margin: 0px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.title > p {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.text > p {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(0, 0%, 50%);
+}
+
+.text > .date {
+  color: hsl(0, 0%, 7%);
+}
+
+.author {
+  width: 139px;
+  height: 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author_pic {
+  width: 32px;
+  height: 32px;
+}
+
+.author > p {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+h1:hover {
+  color: hsl(47, 88%, 63%);
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 327px;
+    height: 501px;
+  }
+
+  .content {
+    width: 279px;
+  }
+}
